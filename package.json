@@ -1,0 +1,11 @@
+{
+  "name": "juros-calc",
+  "description": "A simple interest calculator.",
+  "version": "1.0.0",
+  "main": "dist/assets/index.js",
+  "private": "true",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}

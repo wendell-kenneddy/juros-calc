@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wendell Kenneddy" />
+    <meta name="description" content="Uma simples calculadora de juros." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JurosCalc" />
+    <meta property="og:site_name" content="JurosCalc" />
+    <meta
+      property="og:description"
+      content="Uma simples calculadora de juros."
+    />
+    <meta property="og:url" content="https://juroscalc.vercel.app/" />
+    <meta property="og:locale" content="pt-BR" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="JurosCalc" />
+    <meta
+      property="twitter:description"
+      content="Uma simples calculadora de juros"
+    />
+    <meta property="twitter:url" content="https://juroscalc.vercel.app/" />
+    <link rel="icon" href="/assets/icon.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="/assets/favicon.ico"
+      type="image/x-icon"
+      sizes="any"
+    />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <title>JurosCalc</title>
+    <link rel="canonical" href="https://juroscalc.vercel.app/" />
+    <link rel="stylesheet" href="/assets/main.css" />
+    <link rel="manifest" href="/assets/manifest.json" />
+  </head>
+
+  <body>
+    <header id="page-header">
+      <h1>JurosCalc</h1>
+    </header>
+
+    <main>
+      <form>
+        <small>Use ponto (.) para vírgulas.</small>
+
+        <div class="form-control">
+          <label for="capital">Capital</label>
+          <input type="number" name="capital" id="capital" step="0.01" />
+        </div>
+
+        <div class="form-control">
+          <label for="rate">Taxa (%/mês)</label>
+          <input type="number" name="rate" id="rate" step="0.01" />
+        </div>
+
+        <div class="form-control">
+          <label for="time">Tempo (Meses)</label>
+          <input type="number" name="time" id="time" step="1" />
+        </div>
+
+        <div class="form-control">
+          <label for="interest-type">Tipo</label>
+          <select name="interest-type" id="interest-type">
+            <option value="simple">Simples</option>
+            <option value="compound">Composto</option>
+          </select>
+        </div>
+
+        <button type="submit" id="calculate-button">Calcular</button>
+      </form>
+
+      <section>
+        <h2 id="total">Montante: R$ 0,00</h2>
+
+        <ul id="history"></ul>
+
+        <button id="clear-history">Limpar histórico</button>
+      </section>
+    </main>
+
+    <footer>
+      <a
+        href="https://github.com/wendell-kenneddy"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Wendell Kenneddy</a
+      >
+    </footer>
+
+    <script src="/assets/index.js" type="module"></script>
+  </body>
+</html>

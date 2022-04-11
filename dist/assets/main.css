@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 87.5%; /* 14px */
+}
+
+button,
+a,
+textarea {
+  color: inherit;
+}
+
+body,
+button,
+a,
+textarea {
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+body {
+  background: #fafafa;
+}
+
+#page-header {
+  background: #121212;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+}
+
+main {
+  margin: 0 auto 1rem;
+  width: 90vw;
+  max-width: 720px;
+}
+
+form {
+  padding: 0.5rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+form small {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+form div + div {
+  margin-top: 0.5rem;
+}
+
+label {
+  font-weight: 500;
+}
+
+input {
+  border: solid 1px #121212;
+  border-radius: 4px;
+  padding: 0.1rem 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#calculate-button {
+  background: #121212;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#calculate-button:hover {
+  background: #242424;
+}
+
+main section {
+  border-top: 1px solid #121212;
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  text-align: left;
+}
+
+#total {
+  font-size: 1.2rem;
+}
+
+#history {
+  margin-top: 1rem;
+}
+
+#history li {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#history li + li {
+  margin-top: 0.5rem;
+}
+
+#clear-history {
+  background: transparent;
+  border: 1px solid #121212;
+  border-radius: 4px;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #121212;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#clear-history:hover {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+footer {
+  margin: 1rem auto;
+  width: 90vw;
+  max-width: 720px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: underline;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 93.75%;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    font-size: 100%;
+  }
+}
